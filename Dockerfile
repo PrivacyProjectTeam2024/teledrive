@@ -11,4 +11,5 @@ COPY web/package.json web/package.json
 RUN yarn cache clean
 RUN yarn install --network-timeout 1000000
 COPY . .
-RUN yarn run build
+RUN yarn build
+RUN yarn run
